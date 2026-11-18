@@ -13,12 +13,17 @@ flowchart LR
     Edited --> Rollout["独立 Go2 仿真实验"]
     Rollout --> Evidence["原生轨迹、指标和三路视频"]
     World --> Score["重建评测"]
-    Score --> Critic["Task critic"]
-    Evidence --> Critic
-    Critic --> Skills["共享 skill 版本"]
+    World --> WorldCritic["重建 task critic"]
+    Score --> WorldCritic
+    Safe --> SafeCritic["威胁场景 task critic"]
+    Evidence --> SafeCritic
+    WorldCritic -->|重建经验提案| Skills["共享 skill 版本库"]
+    SafeCritic -->|场景编辑与实验经验提案| Skills
     Skills --> World
     Skills --> Safe
 ```
+
+重建 task critic 根据重建过程和质量评测提炼建模经验。威胁场景 task critic 使用专用提示词，结合场景编辑过程与独立实验的 rollout 证据提炼经验。两者各自提出 skill 候选，候选都记录在共享版本库中。
 
 ## 工作流
 

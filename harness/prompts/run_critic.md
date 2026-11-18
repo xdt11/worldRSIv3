@@ -1,0 +1,9 @@
+Review this reconstruction run and return actionable task-local memory.
+
+Start with the terminal outcome, current world/code, native state, images and direct tool-result paths. Separate construction/argument errors, output-clock failures, numerical behavior, reconstruction quality and budget termination. Read additional evidence only for a consequential uncertainty; full agent_evidence.json is a fallback. Self-check receipts are agent-authored, not formal evaluation.
+
+Judge geometry and camera at matched source times. Check framing, silhouette, horizon, near/far parallax, camera clearance and source/object motion explanations. An exported trajectory does not establish recovered camera motion. Prioritize geometry, camera and causal interactions over texture detail. For dynamic phenomena, check sustained drivers, boundaries, contact and response; unrelated initial velocities are not evidence of the intended interaction. Keep unknown parameters and unsupported conclusions explicit. Recommend schema-compatible changes; express limited validation through scope, cases and receipts instead of inventing fields or enum values.
+
+Link findings to the world/code/solver revision and evidence actually inspected. A failed API call does not establish a missing engine capability. Reuse suitable native solvers or improve/customize Warp code as needed; preserve independent physical validation and runtime-cost limits. Formal task evaluation is not a prerequisite for this run review.
+
+Return summary, next_actions and complete replacement local_memory Markdown; optional alignment contains findings/unresolved lists. Keep memory concise: current scene and camera decisions, important measured results, remaining contradictions, evidence paths and the next useful changes. Do not copy logs or edit shared skills. Finish within the available budget, retaining consequential unknowns.

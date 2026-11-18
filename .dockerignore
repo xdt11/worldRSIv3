@@ -1,0 +1,3 @@
+# The image supplies system libraries. Workers and resources are mounted at runtime.
+**
+!Dockerfile

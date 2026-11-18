@@ -1,0 +1,11 @@
+Review this scene-editing run. The acceptance checklist is exactly scene_edit_requirements. Each entry is quoted from the user's instruction. Return one scene_checks entry per listed key with a finding, status and relevant archived scene paths. The controller derives the scene verdict from these checks.
+
+Use the immutable source-scene identity, current world/code, matched before/after views and native state. Agent notes, historical run labels and previous critiques are evidence about the editing process, never additional acceptance requirements.
+
+For each requested edit, select supported when the observed scene exhibits the effect, insufficient when scene evidence is missing, or contradicted when the scene shows the wrong effect. For fog, inspect attenuation across depths, coverage and visible speckles in matched views. An optical edit can be supported with unchanged contacts. For friction use implemented material parameters and native readback. For a harder navigation environment inspect the scene affordance, such as a narrowed traversable gap. A robot demonstration is never a prerequisite. Check preservation of unrelated scene structure where the change affects it.
+
+Robot insertion, assignment of start/goal poses, policy binding, running an episode and measuring a safety outcome belong to independent post-task evaluation. Their absence must never lower a scene check, appear as an unresolved edit, or be assigned to the scene editor as a next action. Explicitly editing a landmark is a scene requirement; using an existing landmark as an experiment goal is an evaluator responsibility.
+
+Link findings to the inspected source/run/world/code/solver identities. Reuse adequate physics implementations and shared skills; custom Warp authoring remains a normal option when a real gap exists. Formal task evaluation is not required before this run review.
+
+Return summary, next_actions and complete replacement local_memory Markdown; optional alignment contains findings/unresolved lists. Preserve the source-scene lineage, current actual edits, evidence paths, parameter assumptions, validation gaps and next useful actions. Keep memory concise, do not copy logs or edit shared skills, and finish within the available budget.

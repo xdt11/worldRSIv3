@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "purpose": "Diverse integration pool: 11 real + 11 synthetic, including a bridge and a castle; no experimental split or performance claim.",
+  "selection_basis": "Purposive coverage of published phenomenon descriptions and multiple simulator series. No selection by agent/scorer performance. Twenty-one videos are directly redistributed; the bridge video is rebuilt with the pinned official recipe, with source provenance and encoding limitations recorded. Descriptions are catalog metadata, never injected as reconstruction instructions.",
+  "seed": null,
+  "repositories": {
+    "Dataset-Real-World": "2e6f267c94b9a61afd2c82852765758afe838f33",
+    "Dataset-Synthetic": "6b634b2ef9e63ffa6b78639c16b6859717423a59",
+    "Dataset-Model-Estimation": "671db39a7ca642005478a2d2cd913a3455e1a235"
+  },
+  "cases": [
+    {
+      "case": "real/wisa_80k_19_domino_line_triggers",
+      "split": "smoke",
+      "phenomenon": "rigid_chain",
+      "description": "多米诺与阶梯翻滚"
+    },
+    {
+      "case": "real/phys_ad_04_meshing_gears_rotating",
+      "split": "smoke",
+      "phenomenon": "mechanism",
+      "description": "啮合齿轮传动"
+    },
+    {
+      "case": "real/phys101_04_suspended_spring_mass",
+      "split": "smoke",
+      "phenomenon": "elastic_oscillation",
+      "description": "弹簧质量振子"
+    },
+    {
+      "case": "real/physics_iq_benchmark_13_magnet_attracting_pulling",
+      "split": "smoke",
+      "phenomenon": "magnetic",
+      "description": "磁铁牵引扳手"
+    },
+    {
+      "case": "real/physics_iq_benchmark_08_silk_cloth_thrown",
+      "split": "smoke",
+      "phenomenon": "cloth",
+      "description": "丝绸飘落覆盖茶壶"
+    },
+    {
+      "case": "real/wisa_80k_29_milk_pouring_bowl",
+      "split": "smoke",
+      "phenomenon": "liquid",
+      "description": "牛奶倒入麦片碗并飞溅"
+    },
+    {
+      "case": "real/wisa_80k_45_sugar_cubes_falling",
+      "split": "smoke",
+      "phenomenon": "granular",
+      "description": "糖块落在砂糖堆上"
+    },
+    {
+      "case": "real/wisa_80k_48_bullet_shattering_glass",
+      "split": "smoke",
+      "phenomenon": "fracture",
+      "description": "弹丸击碎玻璃"
+    },
+    {
+      "case": "real/robo_craft_02_robotic_gripper_presses",
+      "split": "smoke",
+      "phenomenon": "plastic_deformation",
+      "description": "机械夹爪按压黏土"
+    },
+    {
+      "case": "real/task_level_ilc_01_robot_swinging_rope",
+      "split": "smoke",
+      "phenomenon": "rope",
+      "description": "机械臂甩绳与波传播"
+    },
+    {
+      "case": "synthetic/B_30",
+      "split": "smoke",
+      "phenomenon": "soft_body",
+      "description": "软轮胎沿阶梯弹跳"
+    },
+    {
+      "case": "synthetic/B_02",
+      "split": "smoke",
+      "phenomenon": "liquid",
+      "description": "瓶中液体倒入杯子"
+    },
+    {
+      "case": "synthetic/B_20",
+      "split": "smoke",
+      "phenomenon": "magnetic",
+      "description": "磁力拾取小球"
+    },
+    {
+      "case": "synthetic/B_25",
+      "split": "smoke",
+      "phenomenon": "rope",
+      "description": "绳摆绕杆缠绕"
+    },
+    {
+      "case": "synthetic/G_12",
+      "split": "smoke",
+      "phenomenon": "sheet",
+      "description": "纸张折叠"
+    },
+    {
+      "case": "synthetic/CK_06",
+      "split": "smoke",
+      "phenomenon": "granular",
+      "description": "颗粒沙犰狳"
+    },
+    {
+      "case": "synthetic/HM_07",
+      "split": "smoke",
+      "phenomenon": "fracture",
+      "description": "破碎场景"
+    },
+    {
+      "case": "synthetic/LI_05",
+      "split": "smoke",
+      "phenomenon": "articulated_contact",
+      "description": "libuipc helicopter-front 场景"
+    },
+    {
+      "case": "synthetic/TM_02",
+      "split": "smoke",
+      "phenomenon": "viscous_material",
+      "description": "goo 材料场景"
+    },
+    {
+      "case": "synthetic/Z_09",
+      "split": "smoke",
+      "phenomenon": "multi_material",
+      "description": "fourbar 多材料场景"
+    },
+    {
+      "case": "real/internet_33_bridge_traffic_flowing",
+      "split": "smoke",
+      "phenomenon": "bridge_traffic",
+      "description": "金门大桥主体及双向车流",
+      "video_rebuild": {
+        "sha256": "8de7d818a346d8d4a972c387832778bfd52dd2c670f8bc1cf6f4a5abbed55e99",
+        "receipt": "real-rebuild/internet_33_bridge_traffic_flowing-provenance.json",
+        "receipt_sha256": "457a4b79ab0235ab19a95b86e86fb7c230d821f59df3e2a12e0741ef045c0591",
+        "method": "Pinned official prepare_videos.py; see provenance for original source, recipe and encoder limitation"
+      }
+    },
+    {
+      "case": "synthetic/CK_02",
+      "split": "smoke",
+      "phenomenon": "architectural_structure",
+      "description": "城堡结构受撞破坏"
+    }
+  ]
+}

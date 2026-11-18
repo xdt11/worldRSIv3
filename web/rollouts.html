@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="同步查看第一人称原始与神经渲染画面、第三人称视频和实验运行记录">
+  <title>safeRSI · Rollouts</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/rollouts.js" defer></script>
+</head>
+<body data-workspace="rollouts">
+  <aside id="sidebar">
+    <a class="brand" href="/rollouts" aria-label="Rollout 历史"><span class="brand-mark" aria-hidden="true">◈</span><span><strong>Rollouts</strong><small>EXPERIMENT REVIEW</small></span></a>
+    <nav aria-label="工作区导航">
+      <a class="nav-item active" href="/rollouts"><span class="nav-symbol">▷</span>Rollout 历史<span id="rollout-count" class="nav-count">0</span></a>
+      <a class="nav-item workspace-link" href="/safe"><span class="nav-symbol">◫</span>safeRSI 场景编辑<span class="push">↗</span></a>
+      <a class="nav-item workspace-link" href="/"><span class="nav-symbol">◫</span>WorldRSI 场景重建<span class="push">↗</span></a>
+    </nav>
+    <div class="list-heading"><span>历史实验</span><button id="refresh" class="icon-button" title="刷新记录" aria-label="刷新记录">↻</button></div>
+    <label class="sr-only" for="search">筛选 rollout</label><input id="search" class="search" placeholder="搜索场景或实验…" autocomplete="off">
+    <div id="records" class="records"></div>
+    <footer><div class="sidebar-system"><span id="connection-dot" class="dot"></span><span id="connection">正在连接后端</span></div><small>Scene. Execution. Evidence.</small></footer>
+  </aside>
+  <div id="studio-main">
+    <header class="topbar"><button id="menu" class="icon-button mobile-only" aria-label="切换导航">☰</button><div id="breadcrumb">研究空间 <span>›</span> Rollout 历史</div><span class="engine-pill">NEWTON / WARP · NEURAL VISION</span></header>
+    <div id="notice" role="status" hidden></div>
+    <main id="workspace"><section id="content" class="rollout-content"><div class="loading" role="status">正在读取实验记录…</div></section></main>
+    <footer class="main-footer"><span>场景生成与实验执行分别归档</span><span>首视角原始与神经画面 · 第三人称仿真</span><span>Rollout Experiment Review</span></footer>
+  </div>
+</body>
+</html>

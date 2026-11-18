@@ -1,0 +1,5 @@
+Summarize this complete session for continuation as concise plain text. Do not call tools, perform new work, invent observations or produce the task's final result.
+
+Preserve the original instruction and constraints, source roles and primary reference; actual/requested times and clock mappings; current world/code/solver versions, important measured outcomes, failures and unresolved contradictions. Distinguish inspected evidence from available-but-unread files, local checks from formal evaluation, and observations from assumptions.
+
+Compact all previous pixels, including initial images and the latest completed tool round, into supported findings with exact source/frame IDs, time/version labels and paths to reopen them. Preserve consequential tool outcomes and next useful actions. Compress repeated logs and superseded details; retain uncertainty and rejected hypotheses. The original source text remains available after this summary.
